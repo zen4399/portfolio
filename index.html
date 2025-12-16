@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>42 Tokyo Portfolio | Digital Grid Internship</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <h1 class="nav-logo">42 Portfolio</h1>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-container">
+                <div class="hero-content">
+                    <h1 class="hero-title">Systems Programming & Low-Level Development</h1>
+                    <h2 class="hero-subtitle">42 Tokyo Student & Software Engineer Intern</h2>
+                    <p class="hero-description">
+                        デジタルグリッドインターンシップ応募用ポートフォリオ。<br>
+                        42東京での学習とIrvineシステムズでの実務経験を通じて培った<br>
+                        システムプログラミング・Web開発スキルをご紹介します。
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#experience" class="btn btn-primary">実務経験を見る</a>
+                        <a href="#projects" class="btn btn-secondary">プロジェクトを見る</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="terminal-window">
+                        <div class="terminal-header">
+                            <div class="terminal-buttons">
+                                <div class="terminal-button red"></div>
+                                <div class="terminal-button yellow"></div>
+                                <div class="terminal-button green"></div>
+                            </div>
+                            <span class="terminal-title">minishell</span>
+                        </div>
+                        <div class="terminal-body">
+                            <div class="terminal-line">$ ./minishell</div>
+                            <div class="terminal-line">minishell$ echo "Hello Digital Grid!"</div>
+                            <div class="terminal-line">Hello Digital Grid!</div>
+                            <div class="terminal-line">minishell$ ls -la | grep "\.c$"</div>
+                            <div class="terminal-line">-rw-r--r-- 1 user user 2048 Dec 16 parser.c</div>
+                            <div class="terminal-line">-rw-r--r-- 1 user user 1536 Dec 16 tokenizer.c</div>
+                            <div class="terminal-line typing">minishell$ <span class="cursor">|</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <div class="container">
+                <h2 class="section-title">About Me</h2>
+
+                <div class="about-content">
+                    <div class="about-intro">
+                        <div class="profile-card">
+                            <div class="profile-info">
+                                <h3>全 炳勲 (Zen Isao)</h3>
+                                <p class="profile-subtitle">Software Engineer & 42 Tokyo Student</p>
+                                <p class="profile-description">
+                                    システムプログラミングとWeb開発の両軸でスキルを積み重ね、<br>
+                                    エネルギー・インフラ分野でのソフトウェア技術革新に貢献したいと考えています。
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="about-sections">
+                        <div class="about-section">
+                            <h4>🎓 学歴・資格</h4>
+                            <div class="timeline">
+                                <div class="timeline-item">
+                                    <span class="timeline-date">2024年3月</span>
+                                    <span class="timeline-content">早稲田大学文化構想学部卒業</span>
+                                </div>
+                                <div class="timeline-item">
+                                    <span class="timeline-date">2025年4月</span>
+                                    <span class="timeline-content">42Tokyo入学</span>
+                                </div>
+                            </div>
+
+                            <div class="certifications">
+                                <h5>取得資格</h5>
+                                <div class="cert-grid">
+                                    <div class="cert-item">
+                                        <strong>基本情報技術者試験</strong>
+                                        <span>2025年1月</span>
+                                    </div>
+                                    <div class="cert-item">
+                                        <strong>Python 3 エンジニア認定基礎試験</strong>
+                                        <span>2024年10月</span>
+                                    </div>
+                                    <div class="cert-item">
+                                        <strong>HSK6級（中国語能力試験）</strong>
+                                        <span>2022年6月</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="about-section">
+                            <h4>💻 技術への取り組み</h4>
+                            <div class="tech-approach">
+                                <div class="approach-item">
+                                    <h5>システムレベル理解</h5>
+                                    <p>42Tokyoでのminishell実装を通じて、システムコールやメモリ管理など、OSに近い層の挙動を学習。高級言語では触れられない低レイヤー技術の深い理解を目指しています。</p>
+                                </div>
+                                <div class="approach-item">
+                                    <h5>ハードウェア→ソフトウェア理解</h5>
+                                    <p>個人的にNand2Tetrisプロジェクトに取り組み、NandゲートからALU・CPUを構築し、OS、コンパイラまでを設計。コンピューターの全体像について体系的な理解を深めています。</p>
+                                </div>
+                                <div class="approach-item">
+                                    <h5>実践的開発経験</h5>
+                                    <p>Irvineシステムズでの実務を通じて、Python/Flaskによる実際のプロダクション環境での開発経験を積み、チーム開発とコードレビューの重要性を実感しています。</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="about-section">
+                            <h4>🌟 デジタルグリッドへの想い</h4>
+                            <div class="motivation">
+                                <p>
+                                    デジタルグリッドを志望する理由は、<strong>エネルギー分野におけるソフトウェア技術の可能性</strong>に強く惹かれるからです。
+                                    42Tokyoで培った「自走力」と実務経験で身につけた「実装力」を活かし、
+                                    持続可能なエネルギーシステムの実現に貢献したいと考えています。
+                                </p>
+                                <div class="motivation-points">
+                                    <div class="motivation-point">
+                                        <strong>技術的挑戦</strong>
+                                        <span>エネルギー分野特有の高信頼性・リアルタイム性要求への挑戦</span>
+                                    </div>
+                                    <div class="motivation-point">
+                                        <strong>社会的意義</strong>
+                                        <span>インフラを支えるソフトウェアで社会に直接貢献する機会</span>
+                                    </div>
+                                    <div class="motivation-point">
+                                        <strong>学際的アプローチ</strong>
+                                        <span>文化構想学部での学際的思考をエネルギー×ITの領域で活用</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="about-section">
+                            <h4>🎯 個人的な背景</h4>
+                            <div class="personal-background">
+                                <div class="background-item">
+                                    <strong>継続力</strong>
+                                    <p>小学5年生から大学までドラムを継続。チームでの協調性と長期的な練習による技術向上の重要性を学びました。</p>
+                                </div>
+                                <div class="background-item">
+                                    <strong>学際的思考</strong>
+                                    <p>大学では社会学・ジェンダー論を学び、世界を論理的なモデルとして捉える社会学的思考を習得。この思考法は現在のIT分野でも活用しています。</p>
+                                </div>
+                                <div class="background-item">
+                                    <strong>国際性</strong>
+                                    <p>中国語HSK6級取得。グローバルな環境でのコミュニケーション能力とアジア市場への理解を持っています。</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="about-cta">
+                        <p>詳細な履歴書・経歴書をご希望の場合は、以下よりダウンロードいただけます。</p>
+                        <a href="#" class="btn btn-outline" onclick="copyEmail('isaozen4399@gmail.com')">連絡先をコピー</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience" class="experience">
+            <div class="container">
+                <h2 class="section-title">Professional Experience</h2>
+
+                <div class="experience-timeline">
+                    <div class="experience-item">
+                        <div class="experience-date">2024年10月 - 現在</div>
+                        <div class="experience-content">
+                            <h3 class="experience-title">Software Engineer Intern</h3>
+                            <h4 class="experience-company">Irvineシステムズ</h4>
+
+                            <div class="experience-description">
+                                <p>社内システムの機能拡張プロジェクトにて、設計から本番環境デプロイまでの全工程を担当。</p>
+                            </div>
+
+                            <div class="experience-projects">
+                                <div class="exp-project">
+                                    <h5>Gmail通知機能の実装</h5>
+                                    <div class="exp-project-details">
+                                        <div class="exp-feature">
+                                            <strong>技術スタック:</strong>
+                                            <span>Python Flask, SMTP, Gmail API</span>
+                                        </div>
+                                        <div class="exp-feature">
+                                            <strong>担当範囲:</strong>
+                                            <span>要件定義、設計、実装、テスト、デプロイ</span>
+                                        </div>
+                                        <div class="exp-feature">
+                                            <strong>実装内容:</strong>
+                                            <span>SMTPサーバー連携、メール送信機能、エラーハンドリング</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="exp-project">
+                                    <h5>品質保証・テスト業務</h5>
+                                    <div class="exp-project-details">
+                                        <div class="exp-feature">
+                                            <strong>業務内容:</strong>
+                                            <span>機能テスト、回帰テスト、バグ報告・修正</span>
+                                        </div>
+                                        <div class="exp-feature">
+                                            <strong>習得スキル:</strong>
+                                            <span>テスト設計、品質管理プロセス理解</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="experience-achievements">
+                                <h5>成果・学び</h5>
+                                <ul>
+                                    <li>実際のプロダクション環境でのフル開発サイクル経験</li>
+                                    <li>チームでの協働開発とコードレビュープロセス</li>
+                                    <li>企業の開発フローとベストプラクティス習得</li>
+                                    <li>Python/Flaskを使用した実用的なWeb アプリケーション開発</li>
+                                </ul>
+                            </div>
+
+                            <div class="experience-tech">
+                                <span class="tech-badge python">Python</span>
+                                <span class="tech-badge flask">Flask</span>
+                                <span class="tech-badge smtp">SMTP</span>
+                                <span class="tech-badge gmail">Gmail API</span>
+                                <span class="tech-badge testing">Testing</span>
+                                <span class="tech-badge deployment">Deployment</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="projects">
+            <div class="container">
+                <h2 class="section-title">Featured Projects</h2>
+
+                <div class="featured-project">
+                    <div class="project-content">
+                        <h3 class="project-title">minishell - Bash-like Shell Implementation</h3>
+                        <div class="project-badges">
+                            <span class="badge featured">Featured</span>
+                            <span class="badge">C</span>
+                            <span class="badge">Systems Programming</span>
+                            <span class="badge">Unix</span>
+                        </div>
+
+                        <p class="project-description">
+                            Bashのようなシェルを一から実装した42東京の課題。チームプロジェクトとして開発し、
+                            トークナイザー、パーサー、評価エンジンを担当しました。
+                        </p>
+
+                        <div class="project-features">
+                            <h4>実装機能</h4>
+                            <div class="features-grid">
+                                <div class="feature-item">
+                                    <strong>トークナイザー</strong>
+                                    <span>コマンドラインの字句解析とトークン生成</span>
+                                </div>
+                                <div class="feature-item">
+                                    <strong>パーサー</strong>
+                                    <span>AST構築とコマンド構造の解析</span>
+                                </div>
+                                <div class="feature-item">
+                                    <strong>評価エンジン</strong>
+                                    <span>コマンド実行とプロセス管理</span>
+                                </div>
+                                <div class="feature-item">
+                                    <strong>環境変数処理</strong>
+                                    <span>変数展開と環境管理</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="personal-contribution">
+                            <h4>個人貢献（Git履歴による証明）</h4>
+                            <div class="contribution-stats">
+                                <div class="stat">
+                                    <span class="stat-number">15+</span>
+                                    <span class="stat-label">commits</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-number">4</span>
+                                    <span class="stat-label">major features</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-number">2000+</span>
+                                    <span class="stat-label">lines of code</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="project-links">
+                            <a href="#" class="btn btn-outline">GitHub Repository</a>
+                            <a href="#" class="btn btn-outline">Live Demo</a>
+                        </div>
+                    </div>
+
+                    <div class="project-code">
+                        <div class="code-window">
+                            <div class="code-header">
+                                <span class="code-title">tokenizer.c</span>
+                            </div>
+                            <div class="code-body">
+                                <pre><code class="language-c">typedef enum {
+    TOKEN_WORD,
+    TOKEN_PIPE,
+    TOKEN_REDIRECT_IN,
+    TOKEN_REDIRECT_OUT,
+    TOKEN_REDIRECT_APPEND,
+    TOKEN_HEREDOC,
+    TOKEN_EOF
+} token_type_t;
+
+typedef struct s_token {
+    token_type_t type;
+    char *value;
+    struct s_token *next;
+} t_token;
+
+t_token *tokenize(const char *input) {
+    t_token *head = NULL;
+    t_token *current = NULL;
+
+    // Implementation details...
+}</code></pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="other-projects">
+                    <h3>Other 42 Projects</h3>
+                    <div class="projects-grid">
+                        <div class="project-card">
+                            <h4>push_swap</h4>
+                            <p>効率的なソートアルゴリズムの実装。スタック操作のみで最小手数ソートを実現。</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">C</span>
+                                <span class="tech-tag">Algorithm</span>
+                            </div>
+                        </div>
+
+                        <div class="project-card">
+                            <h4>philosophers</h4>
+                            <p>哲学者の食事問題。マルチスレッドプログラミングとデッドロック回避を学習。</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">C</span>
+                                <span class="tech-tag">Threading</span>
+                            </div>
+                        </div>
+
+                        <div class="project-card">
+                            <h4>so_long</h4>
+                            <p>2Dゲーム開発。グラフィックライブラリを使用したゲームエンジンの基礎を学習。</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">C</span>
+                                <span class="tech-tag">Graphics</span>
+                            </div>
+                        </div>
+
+                        <div class="project-card">
+                            <h4>minitalk</h4>
+                            <p>UNIXシグナルを使用したプロセス間通信。バイナリレベルでのデータ転送を実装。</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">C</span>
+                                <span class="tech-tag">IPC</span>
+                            </div>
+                        </div>
+
+                        <div class="project-card">
+                            <h4>ft_printf</h4>
+                            <p>printf関数の完全な再実装。可変長引数とフォーマット指定子の処理を学習。</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">C</span>
+                                <span class="tech-tag">Variadic</span>
+                            </div>
+                        </div>
+
+                        <div class="project-card">
+                            <h4>libft</h4>
+                            <p>標準Cライブラリの再実装。基礎的なアルゴリズムとデータ構造を習得。</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">C</span>
+                                <span class="tech-tag">Library</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="skills">
+            <div class="container">
+                <h2 class="section-title">Technical Skills</h2>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3>Programming Languages</h3>
+                        <div class="skill-items">
+                            <div class="skill-item">
+                                <span class="skill-name">C</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 90%;"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">Python</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 85%;"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">Shell Scripting</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 80%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <h3>Systems Programming</h3>
+                        <div class="skill-items">
+                            <div class="skill-item">
+                                <span class="skill-name">Unix/Linux</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 85%;"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">Process Management</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 80%;"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">Memory Management</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 85%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <h3>Web Development</h3>
+                        <div class="skill-items">
+                            <div class="skill-item">
+                                <span class="skill-name">Flask</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 80%;"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">SMTP Integration</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 85%;"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">API Integration</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 75%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <h3>Development Tools</h3>
+                        <div class="skill-items">
+                            <div class="skill-item">
+                                <span class="skill-name">Git</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 85%;"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">Testing & QA</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 80%;"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">Production Deployment</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 75%;"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">Debugging (GDB/Valgrind)</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 75%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2 class="section-title">Contact</h2>
+                <div class="contact-content">
+                    <p>デジタルグリッドでのインターンシップの機会について、ぜひお話しさせていただきたく思います。</p>
+                    <div class="contact-links">
+                        <a href="mailto:your-email@example.com" class="contact-link">
+                            <span>Email</span>
+                        </a>
+                        <a href="https://github.com" class="contact-link">
+                            <span>GitHub</span>
+                        </a>
+                        <a href="https://linkedin.com" class="contact-link">
+                            <span>LinkedIn</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 42 Tokyo Portfolio. Created for Digital Grid Internship.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-core.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-c.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
