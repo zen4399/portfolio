@@ -14,7 +14,7 @@ level 1
 level 2
 * [so_long](https://github.com/zen4399/so_long)
 * [push_swap](https://github.com/zen4399/push_swap)
-* [pipex](https://github.com/zen4399/pipex)
+* [minitalk](https://github.com/zen4399/minitalk)
 
 level 3
 * [minishell](https://github.com/zen4399/minishell)
