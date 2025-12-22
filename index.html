@@ -128,24 +128,6 @@
                                 </div>
                             </div>
                         </div>
-
-                        <div class="about-section">
-                            <h4>🎯 個人的な背景</h4>
-                            <div class="personal-background">
-                                <div class="background-item">
-                                    <strong>継続力</strong>
-                                    <p>小学5年生から大学までドラムを継続。チームでの協調性と長期的な練習による技術向上の重要性を学びました。</p>
-                                </div>
-                                <div class="background-item">
-                                    <strong>学際的思考</strong>
-                                    <p>大学では社会学・ジェンダー論を学び、世界を論理的なモデルとして捉える社会学的思考を習得。この思考法は現在のIT分野でも活用しています。</p>
-                                </div>
-                                <div class="background-item">
-                                    <strong>国際性</strong>
-                                    <p>中国語HSK6級取得。グローバルな環境でのコミュニケーション能力とアジア市場への理解を持っています。</p>
-                                </div>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -506,10 +488,11 @@ t_token *tokenize(const char *input) {
                 <div class="contact-content">
                     <p>デジタルグリッドでのインターンシップの機会について、ぜひお話しさせていただきたく思います。</p>
                     <div class="contact-links">
-                        <a href="mailto:isaozen4399@gmail.com" class="contact-link">
-                            <span>Email</span>
-                        </a>
-                        <a href="https://github.com/zen4399" class="contact-link">
+                        <button onclick="copyEmail('isaozen4399@gmail.com')" class="contact-link contact-email">
+                            <span>📧 isaozen4399@gmail.com</span>
+                            <small style="display: block; font-size: 0.75rem; opacity: 0.8; margin-top: 0.25rem;">クリックでコピー</small>
+                        </button>
+                        <a href="https://github.com/zen4399" target="_blank" class="contact-link">
                             <span>GitHub</span>
                         </a>
                     </div>

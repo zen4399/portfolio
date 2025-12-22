@@ -101,12 +101,85 @@ window.addEventListener('scroll', function() {
     });
 });
 
-// Add CSS for active navigation link
+// Copy email to clipboard
+function copyEmail(email) {
+    navigator.clipboard.writeText(email).then(function() {
+        // Show success notification
+        showNotification('メールアドレスをコピーしました！', 'success');
+    }).catch(function(err) {
+        // Fallback for older browsers
+        const textarea = document.createElement('textarea');
+        textarea.value = email;
+        textarea.style.position = 'fixed';
+        textarea.style.opacity = '0';
+        document.body.appendChild(textarea);
+        textarea.select();
+        try {
+            document.execCommand('copy');
+            showNotification('メールアドレスをコピーしました！', 'success');
+        } catch (err) {
+            showNotification('コピーに失敗しました', 'error');
+        }
+        document.body.removeChild(textarea);
+    });
+}
+
+// Show notification
+function showNotification(message, type = 'success') {
+    const notification = document.createElement('div');
+    notification.textContent = message;
+    notification.style.cssText = `
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        background-color: ${type === 'success' ? '#48bb78' : '#f56565'};
+        color: white;
+        padding: 1rem 1.5rem;
+        border-radius: 8px;
+        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        z-index: 9999;
+        animation: slideIn 0.3s ease;
+        font-weight: 500;
+    `;
+
+    document.body.appendChild(notification);
+
+    setTimeout(() => {
+        notification.style.animation = 'slideOut 0.3s ease';
+        setTimeout(() => {
+            notification.remove();
+        }, 300);
+    }, 3000);
+}
+
+// Add CSS for active navigation link and animations
 const style = document.createElement('style');
 style.textContent = `
     .nav-link.active {
         color: #3182ce !important;
         font-weight: 600;
+    }
+
+    @keyframes slideIn {
+        from {
+            transform: translateX(400px);
+            opacity: 0;
+        }
+        to {
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
+
+    @keyframes slideOut {
+        from {
+            transform: translateX(0);
+            opacity: 1;
+        }
+        to {
+            transform: translateX(400px);
+            opacity: 0;
+        }
     }
 `;
 document.head.appendChild(style);
