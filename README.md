@@ -1,3 +1,8 @@
+# Portfolio
+
+🌐 **ポートフォリオサイト**: https://zen4399.github.io/portfolio/
+
+---
 
 # 42 CURSUS
 
@@ -12,7 +17,7 @@ level 1
 level 2
 * [so_long](https://github.com/zen4399/so_long)
 * [push_swap](https://github.com/zen4399/push_swap)
-* [minitalk](https://github.com/zen4399/minitalk)
+* [minitalk](https://github.com/zen4399/minitalk_mac)
 
 level 3
 * [minishell](https://github.com/zen4399/minishell)
